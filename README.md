@@ -1,4 +1,4 @@
-# daily-exercise
+#daily exercise 2023.4.7
 only to update the exercise of  gramming in my spare time
 # include <stdio.h>
 int  main()
