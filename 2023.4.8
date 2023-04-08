@@ -1,0 +1,88 @@
+//#include <stdio.h>
+//int main()
+//{
+//	//这里的const就是修饰常属性，也就是说num一旦赋值则不可以再次赋值
+//	//但是此时的变量还是变量，并不是常数
+//	const int num = 0;//用const时要直接给变量赋值，不能换行赋值
+//	printf("%d\n", num);
+//	num = 2;
+//	printf("%d\n", num);
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()// 就是说你需要返回一个int类型的值
+//{
+//	int a;
+//	printf("你想要继续学习吗，1：继续；2：不学习\n");
+//	scanf_s("%d", &a);
+//	if (a == 1) {
+//		printf("好孩子，加油!\n");
+//	}
+//	else if (a == 2) {
+//		printf("回去再好好想想吧\n");
+//	}
+//	return 0;//这里返回的就是0
+//} 
+
+//#include <stdio.h>
+//int main()
+//{
+//	float num1, num2;
+//	scanf_s("%f%f", &num1, &num2);//由于版本问题你需要用scanf_s替代scanf 
+//	printf("%.0f%.0f\n", num1, num2);
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int arr[10] = { 0 };//创建数组arr，但是[]里面应该输入的是常量表达式，而不能是变量表达式
+//
+//	//如下：
+//	int n=0;
+//	int arr[n]={0};
+//	//结果而言会报错
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()// 就是说你需要返回一个int类型的值
+//{
+//	//字符串：双引号
+//	//空字符串： ""
+//	//往数组里面加入字符串的时候后面会自动加入一个\0，但是因为\0的输出结果是0，所以不会显示出来
+//	// \0是隐藏在字符串末尾的，是字符串结束的标志，不算字符串的内容
+//	
+//
+//	//转义字符
+//	printf("\\test\n");//这里的\\就是取消转义，也就是说结果会输出\test
+//	printf("\test\n");//这里的输出结果就是	est \t已经被电脑默认为转义字符（水平制表符）
+//	return 0;//这里返回的就是0
+//}
+
+//#include <stdio.h>
+////枚举常量-enum //一定要记住要放在一开始，也就是main函数之前
+//enum day
+//{
+//	Mon,//用逗号隔开，表示的是0(从0开始)
+//	Tues,//1
+//	Wed,//2
+//	Thur,//3
+//	Fri,//4
+//	Sat,//5
+//	Sun//最后一个并不需要逗号，表示的是6
+//};
+////printf("%d\n", Mon);
+////printf("%d\n", Tues);
+////printf("%d\n", Wed);
+////printf("%d\n", Thur);
+////printf("%d\n", Fri);
+////printf("%d\n", Sat);
+////printf("%d\n", Sun);
+//int main()// 就是说你需要返回一个int类型的值
+//
+//{
+//
+//	return 0;//这里返回的就是0
+//}
