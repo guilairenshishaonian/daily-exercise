@@ -1,0 +1,125 @@
+//#include <stdio.h>
+//int main()
+//{
+//	int a, b;
+//	a = 5;
+//	b = a++;// 先把a赋值给b，在a = a + 1;
+//	printf("a = %d, b = %d\n", a, b);
+//	a = 5;
+//	b = ++a;// 先a = a + 1,再把 a 赋值给 b, 即 a = b = a + 1;
+//	printf("a = %d, b = %d\n", a, b);
+//	a = 5;
+//	b = a--;// 先把a赋值给b，在a = a - 1;
+//	printf("a = %d, b = %d\n", a, b);
+//	a = 5;
+//	b = --a;// 先a = a - 1,再把 a 赋值给 b, 即 a = b = a - 1;
+//	printf("a = %d, b = %d\n", a, b);
+//	return 0;
+//}
+
+//#include <stdio.h>
+//static int num2 = 2;// static 修饰全局变量,相当于改变了作用域
+////让静态的全局变量只能在自己所在的源文件内使用，即不能在另外的源文件用extern调用该变量
+////static 修饰函数改变了函数的链接属性
+//// 外部链接属性 -> 内部链接属性 即只能在所在的源文件内使用
+//int main()
+//{
+//	//常见关键字
+//	register int a = 1;//建议把a这个变量变成寄存器变量
+//	unsigned int b = -6;// 无符号关键字，就是说输入的数值一定是正数，即使输入的是负值编译出来还是正数
+//	// struct - 结构体关键字
+//	// union - 联合体\共用体
+//	typedef int u_int;//类型定义 - 类型重定义
+//	int c = 0;
+//	u_int d = 0;//这里的 a 和 b 是同一个类型，只是名字不同	
+//	extern int abcdefg;// 声明外部符号，可以使用其他源文件的变量函数等
+//	static int num1 = 1;//修饰局部变量，它的生命周期变长，也就是不会再次被销毁
+//
+//	printf("%d", abcdefg);
+//
+//	return 0;
+//}
+
+//#include <stdio.h>
+//
+//int main()
+//{
+//	int a = 10;
+//	int arr[] = { 1,2,3 ,4,5,6 };
+//	printf("%d\n", sizeof(a));// int 类型字节是4
+//	printf("%d\n", sizeof(int));
+//	printf("%d\n", sizeof a);
+//	// printf("%d\n", sizeof int); // 没有这种写法
+//	printf("%d\n", sizeof(arr));//输出的是数组字节长度
+//	return 0;
+//}
+int abcdefg = 2023;
+
+//#include <stdio.h>
+//int main()
+//{
+//	int x;
+//	for (x = 7; ; x++) {//对于for 循环的要求有点多，一般都是 赋值;限制条件;运行的一条语句(此处不需要分号)
+//		//不需要限制条件的时候，只需要填入 '1' 或者 ' '空格即可，格式固定死了
+//		if (x % 2 == 1 && x % 3 == 2 && x % 5 == 4 && x % 6 == 5 && x % 7 == 0)
+//		{
+//			printf("%d\n", x);
+//			break;
+//		}
+//	}
+//	return 0;
+//}   
+
+//#include <stdio.h>
+////定义函数
+//int Max1(int x, int y)
+//{
+//	if (x > y)
+//		return x;
+//	else
+//		return y;
+//}
+////定义宏(相对函数会更加简洁，而且参数形式不限）需要用到#define
+//#define Max2(x,y) (x > y ? x : y);	
+//int main()
+//{
+//	//宏和函数
+//	int a, b;
+//	scanf_s("%d%d", &a, &b);
+//	int max1 = Max1(a, b);
+//	int max2 = Max2(a, b);
+//	printf("%d\n", max1);
+//	printf("%d\n", max2);
+//
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int a = 0;
+//	float b = 3.14;
+//	a = (int)b;// (类型) 实行强制类型转换
+//	printf("%d\n", a);// 输出结果是3
+//	return 0;
+//}
+
+//#include <stdio.h>
+////这里要记得其他函数必定有一个返回值，所以需要在函数名前面加上 int ，函数内返回 整数
+//int Max(int a, int b) {
+//	if (a > b)
+//		return a;
+//	else
+//		return b;
+//
+//}
+//int main()
+//{
+//	int num1, num2, max;
+//	printf("请输入两个数，求最大值\n");
+//	scanf_s("%d%d", &num1, &num2);
+//	max = Max(num1, num2);
+//	printf("max = %d\n", max);
+//	return 0;
+//}
+  
