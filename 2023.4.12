@@ -1,0 +1,60 @@
+#include <stdio.h>
+#include <string.h>
+struct Book {
+	char name[20];//数组的形式  这里的数组元素要大于等于你输入的书名的长度
+	int price;//方便后面使用
+};
+int main()
+{
+	//利用结构体类型-创建一个该类型的结构变量
+	struct Book book = { "C语言设计",55};
+	book.price = 100;//还可以修改结构体里面的变量
+	//但是此处的name 并不是变量，而是数组，不能够用 book.name = 'C++' 来修改书名
+	strcpy_s(book.name, "C++");//strcpy - string copy - 字符串拷贝 - 库函数 - string.h(需要调用)
+	printf("这本书叫做：《%s》\n", book.name);
+	return 0;
+}
+
+//#include <stdio.h>
+//struct Book {
+//	char name[20];//数组的形式  这里的数组元素要大于等于你输入的书名的长度
+//	int price;//方便后面使用
+//};
+//int main()
+//{
+//	//利用结构体类型-创建一个该类型的结构变量
+//	struct Book book = { "C语言设计",55 };
+//	printf("书名:《%s》\n", book.name);
+//	printf("这本书的价格是：%d\n", book.price);
+//	book.price = 100;//还可以修改结构体里面的变量
+//	printf("热销时的价格是：%d\n", book.price);
+//
+//	//这个结构体变量还可以和指针结合起来使用
+//	struct Book* w = &book;
+//	//  . 结构体变量.成员
+//	printf("%s\n", (*w).name);
+//	printf("%d\n", (*w).price);
+//	// -> 结构体指针->成员
+//	printf("%s\n", w->name);
+//	printf("%d\n", w->price);
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	//指针
+//	int a = 10;
+//	printf("%p\n", &a);//访问变量a的地址
+//	int* p = &a;// int* 是一个类型名称，在此处就是定义 p 为 指针变量，把变量a存入指针变量中
+//	*p = 20;//* ： 解引用操作符/间接访问操作符	
+//	printf("%d\n", a);
+//	printf("%d\n", *p);
+//
+//	double b = 10.00;
+//	double* q = &b;
+//	*q = 20.00;
+//	printf("%.2lf\n", b);
+//	printf("%.2lf\n", *q);
+//	return 0;
+//}
